@@ -18,7 +18,7 @@ function App() {
 
   useEffect(async () => {
     const result = await axios(
-      `http://www.omdbapi.com/?apikey=f5527810&s=${searchString}`,
+      `https://www.omdbapi.com/?apikey=f5527810&s=${searchString}`,
     );
 
     const data = result.data.Search ? result.data.Search: [];
